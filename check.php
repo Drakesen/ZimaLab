@@ -1,28 +1,4 @@
 <?php
-    $user = 'root';
-    $password = 'root';
-    $db = 'inventory';
-    $host = 'localhost';
-    $port = 8889;
-    
-    $link = mysqli_init();
-    $success = mysqli_real_connect(
-       $link,
-       $host,
-       $user,
-       $password,
-       $db,
-       $port
-    );
-    
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $company_name = $_POST['company_name'];
-    $personal_phone = $_POST['personal_phone'];
-    $work_phone = $_POST['work_phone'];
-    $corporate_phone = $_POST['corporate_phone'];
-    $pass = $_POST['pass'];
-
     $first_name = filter_var(trim($_POST['first_name']), #Фильтруем, чтобы небыло лишних пробелов
     FILTER_SANITIZE_STRING); #Фильтруем как обычную строку
     $last_name = filter_var(trim($_POST['last_name']), 
