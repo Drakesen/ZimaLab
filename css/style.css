@@ -1,0 +1,54 @@
+form {
+    width: 500px;
+}
+.container {
+    width: 500px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.registration {
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.box {
+    width: 300px;
+    height: 350px;
+    background: #F0F8FF;
+    display: inline-block;
+    margin: 20px 50px;
+    border-radius: 0% 25% 0% 10%;
+    font: small 24px/1 sans-serif;
+    
+}
+.all {
+    justify-content: space-around;
+}
+.table {
+    margin-top: 30px;
+    list-style-type: none;
+}
+.pagination {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+
+}
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    transition: .4s;
+}
+.pagination a.active {
+    background: #48D1CC;
+    border-radius: 15% 15% 15% 15%;
+}
+.pagination a:hover:not(.active) {
+    background: #7FFFD4;
+    border-radius: 15% 15% 15% 15%;
+}
